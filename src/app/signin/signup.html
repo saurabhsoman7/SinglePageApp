@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="robots" content="noindex, nofollow" charset="UTF-8">
+
+</head>
+
+<body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="bundle.js"></script>
+  <!-- <script src="submit.js"></script> -->
+
+  <form id="myform" action="?action=sign-up" method="post" class="container">
+    <div class="container-form">
+      <fieldset>
+          <legend>Sign up</legend>
+
+          <label for="username">User Name</label><br>
+          <input type="text" name="username" id="username" placeholder="e.g. Tony Stark"
+          minlength="2" required=""><br><br>
+
+          <label for="contact">Contact</label><br>
+          <input name="contact" type="number" id="contact" placeholder="Phone Number" >
+          <br><br>
+          <label for="emailid">Email id</label><br>
+          <input type="email" name="emailid" id="email"
+          pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="e.g. abc@xyz.com"
+          required=""><br><br>
+
+          <label for="password">Password</label><br>
+          <input type="password" name="password" id="password"
+            placeholder="Enter password" required="" minlength="2"><br><br>
+
+          <label for="password">Confirm Password</label><br>
+          <input type="password" name="cpassword" id="cpassword"
+            placeholder="Same as metioned above."><br><br>
+
+          <button type="submit" name="submit" id="register"
+            >Submit</button>
+          <button type="reset" value="Clear">Clear</button>
+
+      </fieldset>
+    </div>
+  </form>
+  <pre id="result">
+  </pre>
+</body>
